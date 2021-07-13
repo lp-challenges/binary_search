@@ -1,4 +1,7 @@
 # binary_search
+`let numbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`
+`let value = 13`
+
 ```
 func binarySearch(in numbers: [Int], for value: Int) -> Int? {
   var left = 0
