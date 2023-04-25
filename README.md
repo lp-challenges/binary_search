@@ -1,5 +1,6 @@
-# binary search
-The Big O notation for Binary Search is O(log N). In contrast to O(N) which takes an additional step for each data element, O(log N) means that the algorithm takes an additional step each time the data doubles.
+# Binary Search
+#### The Big O notation for Binary Search is O(log N). In contrast to O(N) which takes an additional step for each data element, O(log N) means that the algorithm takes an additional step each time the data doubles. 
+
 `let numbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]` <br>
 `let value = 13`
 
