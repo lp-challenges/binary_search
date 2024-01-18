@@ -29,3 +29,25 @@ func binarySearch(in numbers: [Int], for value: Int) -> Int? {
   return nil
 }
 ```
+## Finding the missing number usinng hashing technique
+
+An array A consisting of N different integers is given. The array contains integers in the range [1..(N + 1)], which means that exactly one element is missing.
+```
+public func solution(_ A : inout [Int]) -> Int {
+    var missingNumber = A.first ?? 0 
+    var tempArray = [Int](repeating: 0, count: A.count + 2)
+    for element in A {
+        tempArray[element] = 1
+    }
+    for (index, tempElement) in tempArray.enumerated() {
+        if index == 0 {
+            continue
+        }
+        if tempElement == 0 {
+            missingNumber = index
+            break
+        }
+    }
+    return missingNumber
+}
+```
